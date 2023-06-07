@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: system-ui;
+    background-image: url("https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80");
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: -2;
+}
+
+body::after{
+    content: "";
+    inset: 0;
+    position: absolute;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.14),
+        rgba(0, 0, 0, 0.379)
+    );
+    z-index: -1;
+}
+
+.container{
+    border: 1px solid white;
+    padding: 2rem;
+    width: 50vw;
+}
+
+.genertated-password{
+    text-align: center;
+}
+
+
+.container {
+    z-index: 0;
+    backdrop-filter: blur(10px);
+    position: relative;
+    background: #8888881a;
+    overflow: hidden;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3),
+        0 3px 10px rgba(0, 0, 0, 0.15);
+    z-index: 1;
+    border: 1px solid rgba(255, 255, 255, 0.308);
+    transition: 0.5s transform ease;
+    max-width: 600px;
+    width: 80vw;
+}
+
+.container:before {
+    content: '';
+    position: absolute;
+    background: inherit;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: -20px;
+    box-shadow: inset 0 0 70px rgba(255, 255, 255, .4);
+    filter: blur(100px);
+    z-index: -1;
+}
+
+.container:hover{
+    transform: translateY(-10px);
+}
+
+label{
+    text-align: right;
+    color: white;
+    font-weight: bolder;
+}
+
+.container-options{
+    display: grid;
+    grid-template-columns: 95% 5%;
+    justify-items: start;
+    align-items: stretch;
+    margin: 1rem 0rem;
+    padding: 0rem 1rem;
+}
+
+
+button{
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    border-radius: 20px;
+    border: none;
+    font-weight: bolder;
+    background-color: transparent;
+    color: black;
+    box-shadow: 0px 0px 1rem aqua;
+    cursor: pointer;
+    background-color: aqua;
+    backdrop-filter: blur(30px);
+    transition: 0.2s box-shadow ease;
+}
+
+button:hover{
+    box-shadow: 0px 0px 1.5rem aqua;
+}
+
+.button-wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.genertated-password{
+    padding: 1rem;
+    font-weight: bolder;
+    border-radius: 20px;
+    font-size: 20px;
+    backdrop-filter: blur(10px);
+    margin-bottom: 1rem;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2),
+        0 3px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.genertated-password::before{
+    content: " ";
+    inset: 0;
+    box-shadow: inset 0 0 70px rgba(255, 255, 255, .4);
+}
+
+hr{
+    margin: 0rem 1rem;
+    opacity: 0.5;
+}
+
+.info{
+    text-align: center;
+    margin: 1rem 1rem;
+    font-weight: 500;
+}

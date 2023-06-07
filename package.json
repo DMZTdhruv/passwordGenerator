@@ -1,0 +1,11 @@
+{
+  "name": "passwordgenerator",
+  "version": "1.0.0",
+  "description": "This is a password generator created by me, you can create a strong password with your own custom selections and you can directly genertate a weak password",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "dmztDhruv",
+  "license": "dmztDhruv"
+}
