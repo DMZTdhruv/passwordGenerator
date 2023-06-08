@@ -106,7 +106,7 @@ class Password {
                 console.log('Select something');
             }
         }
-        strongPassword = strongPassword.slice(0, 11);
+        strongPassword = strongPassword.slice(0, 15);
         generatedPassword.innerHTML = strongPassword;
     }
 };
